@@ -4,4 +4,6 @@
     <string name="button">Hit me !</string>
     <string name="city">HOUSTON,TEXAS</string>
     <string name="temperature">12 Deg</string>
+    <string name="updateText">Tempaerature last updated: </string>
+    <string name="buttonUpdate">Update temperature !</string>
 </resources>
