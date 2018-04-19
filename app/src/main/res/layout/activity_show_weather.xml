@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/texas"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/cityText"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/city"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
+        android:layout_margin="10dp"/>
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:id="@+id/weatherIcon"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/cityText"
+        android:background="#000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tempText"
+        android:text="@string/temperature"
+        android:textStyle="normal"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/cityText"
+        android:layout_toEndOf="@+id/weatherIcon"
+        android:layout_toRightOf="@+id/weatherIcon"
+        android:layout_marginTop="50dp"
+        android:textSize="42sp"
+        tools:ignore="UnknownId" />
+
+</RelativeLayout>
