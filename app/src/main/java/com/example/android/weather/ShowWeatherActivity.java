@@ -60,7 +60,7 @@ public class ShowWeatherActivity extends AppCompatActivity {
                 weatherImg.setImageBitmap(img);
             }
 
-            temp.setText("" + Math.round((weather.temperature.getTemp() - 273.15)) + " °C");
+            temp.setText("" + Math.round((weather.temperature.getTemp() - 273.15)) + "°C");
         }
     }
 

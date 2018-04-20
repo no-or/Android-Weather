@@ -1,5 +1,7 @@
 package com.example.android.weather;
 
+import android.util.Log;
+
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
@@ -51,14 +53,19 @@ public class WeatherHttpClient {
     public byte[] getImage(String code) {
         HttpURLConnection con = null ;
         InputStream is = null;
+
         try {
             con = (HttpURLConnection) ( new URL(IMG_URL + code + ".png")).openConnection();
             con.setRequestMethod("GET");
             con.setDoInput(true);
-            con.setDoOutput(true);
+            con.setDoOutput(false);
             con.connect();
 
             // Let's read the response
+            Integer status = con.getResponseCode();
+            String Sstatus = status.toString();
+            Log.d("STATUSimg", Sstatus );
+            Log.d("CODE", code);
             is = con.getInputStream();
             byte[] buffer = new byte[1024];
             ByteArrayOutputStream baos = new ByteArrayOutputStream();

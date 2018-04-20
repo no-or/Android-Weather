@@ -21,34 +21,25 @@
 
 
     <ImageView
-        android:layout_width="140dp"
-        android:layout_height="140dp"
         android:id="@+id/weatherIcon"
-        android:layout_margin="10dp"
-        android:layout_below="@+id/cityText"
-        android:background="#000"/>
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/tempText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-176dp"
+        android:layout_marginEnd="17dp" />
 
     <TextView
         android:id="@+id/tempText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/cityText"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="113dp"
+        android:layout_marginTop="176dp"
         android:text="@string/temperature"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="60sp"
         android:textStyle="normal"
         tools:ignore="UnknownId" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="13dp"
-        android:text="@string/buttonUpdate" />
-
-
 
 </RelativeLayout>
