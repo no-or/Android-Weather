@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Weather</string>
-    <string name="greetings">Hey, hit the button below to get the current temperature of Houston, Texas. </string>
+    <string name="greetings">Hey, hit the button below to get the current temperature of HOUSTON, TEXAS. </string>
     <string name="button">Hit me !</string>
     <string name="city">HOUSTON,TEXAS</string>
     <string name="temperature">12 °C</string>
